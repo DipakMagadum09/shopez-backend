@@ -101,7 +101,7 @@ const sampleProducts = [
   }
 ];
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/shopez')
+mongoose.connect('mongodb+srv://deepakmagdum769_db_user:i68nj8MUOc5MpUcl@cluster0.hlprsxv.mongodb.net/shopez?appName=Cluster0')
   .then(async () => {
     console.log('Connected to MongoDB');
     await Product.deleteMany({});
